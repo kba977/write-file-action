@@ -588,7 +588,7 @@ function getInput(name, options) {
     if (options && options.required && !val) {
         throw new Error(`Input required and not supplied: ${name}`);
     }
-    return val.trim();
+    return val;
 }
 exports.getInput = getInput;
 /**
